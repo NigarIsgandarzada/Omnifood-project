@@ -34,25 +34,25 @@ body {
 }
 
 .heading-secondary {
-font-size: 4.4rem;
-line-height: 1.2;
-margin-bottom: 9.6rem;
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
 }
 
 .heading-tertiary {
-font-size: 3rem;
-line-height: 1.2;
-margin-bottom: 3.2rem;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
 }
 
 .subheading {
-display: block;
-font-size: 1.6rem;
-font-weight: 500;
-color: #cf711f;
-text-transform: uppercase;
-margin-bottom: 1.6rem;
-letter-spacing: 0.75px;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
 }
 
 .btn,
@@ -113,15 +113,12 @@ letter-spacing: 0.75px;
 .link:active {
   color: #cf711f;
   border-bottom: 1px solid transparent;
- 
 }
 
 *:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
-
-
 
 /************************************/
 /* HEADER */
@@ -170,6 +167,25 @@ letter-spacing: 0.75px;
   border-radius: 9px;
   color: #fff;
   background-color: #e67e22;
+}
+
+
+/* MOBILE */
+.btn-mobile-nav {
+border: none;
+background: none;
+cursor: pointer;
+display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /************************************/
@@ -240,7 +256,6 @@ letter-spacing: 0.75px;
   color: #cf711f;
 }
 
-
 /************************************/
 /* FEATURED IN SECTION*/
 /************************************/
@@ -253,17 +268,21 @@ letter-spacing: 0.75px;
   text-align: center;
   color: #888;
   margin-bottom: 2.4rem;
-
 }
 
 .section-featured {
-padding: 4.8rem 0 3.2rem 0;
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.pricing-plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .logos {
   display: flex;
   justify-content: space-around;
-
 }
 
 .logos img {
@@ -271,8 +290,6 @@ padding: 4.8rem 0 3.2rem 0;
   filter: brightness(0);
   opacity: 50%;
 }
-
-
 
 /************************************/
 /* HOW IT WORKS */
@@ -292,7 +309,6 @@ padding: 4.8rem 0 3.2rem 0;
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
-
 }
 
 .grid:not(:last-child) {
@@ -304,13 +320,11 @@ padding: 4.8rem 0 3.2rem 0;
 }
 
 .grid--3-cols {
-   grid-template-columns: repeat(3, 1fr);
-
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
-
 }
 
 .grid--5-cols {
@@ -340,28 +354,26 @@ padding: 4.8rem 0 3.2rem 0;
 }
 
 .step-description {
-font-size: 1.8rem;
-line-height: 1.8;
+  font-size: 1.8rem;
+  line-height: 1.8;
 }
-
 
 .step-img-box::before,
 .step-img-box::after {
-content: "";
-display: block;
-border-radius: 50%;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .step-img-box::before {
-width: 60%;
-padding-bottom: 60%;
-background-color: #fdf2e9;
-z-index: -2;
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  z-index: -2;
 }
 
 .step-img-box::after {
@@ -384,7 +396,6 @@ z-index: -2;
   border-radius: 11px;
   overflow: hidden;
   transition: all 0.4s;
-
 }
 
 .meal:hover {
@@ -393,8 +404,7 @@ z-index: -2;
 }
 
 .meal-content {
-  padding: 4.8rem;
-  padding-top: 3.2rem;
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
 
 .meal-tags {
@@ -412,17 +422,16 @@ z-index: -2;
   font-weight: 600;
 }
 
-.tag--vegetarian{
+.tag--vegetarian {
   background-color: #51cf66;
 }
 
-.tag--vegan{
-background-color: #94d82d;
+.tag--vegan {
+  background-color: #94d82d;
 }
 
-.tag--paleo{
+.tag--paleo {
   background-color: #ffd43b;
-  
 }
 .meal-img {
   width: 100%;
@@ -455,8 +464,6 @@ background-color: #94d82d;
   color: #e67e22;
 }
 
-
-
 .list {
   list-style: none;
   display: flex;
@@ -465,25 +472,24 @@ background-color: #94d82d;
 }
 
 .list-item {
-font-size: 1.8rem;
-display: flex;
-align-items: center;
-gap: 1.6rem;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
 }
+
 
 .list-icon {
-width: 3rem;
-height: 3rem;
-color: #e67e22;
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
 }
-
-
 
 .all-recipes {
   text-align: center;
   font-size: 1.8rem;
 }
-
 
 /* HELPER/SETTINGS CLASSES */
 .margin-right-sm {
@@ -498,10 +504,9 @@ color: #e67e22;
   text-align: center;
 }
 
-strong{
+strong {
   font-weight: 500;
 }
-
 
 /************************************/
 /* TESTIMONIALS SECTION */
@@ -516,18 +521,14 @@ strong{
 
 .testimonials-container {
   padding: 9.6rem;
-  }
-
- 
+}
 
 .testimonials {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 4.8rem;
-  column-gap: 8rem ;
-  
+  column-gap: 8rem;
 }
-
 
 .testimonial-img {
   width: 6.4rem;
@@ -536,9 +537,9 @@ strong{
 }
 
 .testimonial-text {
-font-size: 1.8rem;
-line-height: 1.8;
-margin-bottom: 1.6rem;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
 }
 
 .testimonial-name {
@@ -558,9 +559,9 @@ margin-bottom: 1.6rem;
 }
 
 .gallery-item img {
-display: block;
-width: 100%;
-transition: all 0.4s;
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
 }
 
 .gallery-item img:hover {
@@ -583,16 +584,17 @@ transition: all 0.4s;
 }
 
 .list-item {
-font-size: 1.8rem;
-display: flex;
-align-items: center;
-gap: 1.6rem;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
-width: 3rem;
-height: 3rem;
-color: #e67e22;
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
 }
 
 .pricing-plan {
@@ -601,9 +603,9 @@ color: #e67e22;
 }
 
 .pricing-plan--starter {
-justify-self: end;
-padding: 4.6rem;
-border: 2px solid #fdf2e9;
+  justify-self: end;
+  padding: 4.6rem;
+  border: 2px solid #fdf2e9;
 }
 
 .pricing-plan--complete {
@@ -624,7 +626,6 @@ border: 2px solid #fdf2e9;
   background: #ffd43b;
   padding: 0.8rem 8rem;
   transform: rotate(45deg);
- 
 }
 
 .plan-header {
@@ -640,12 +641,11 @@ border: 2px solid #fdf2e9;
   margin-bottom: 3.2rem;
 }
 
- 
 .plan-price {
-font-size: 6.2rem;
-font-weight: 600;
-color: #333;
-margin-bottom: 1.6rem;
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
 }
 
 .plan-price span {
@@ -655,9 +655,9 @@ margin-bottom: 1.6rem;
 }
 
 .plan-text {
-font-size: 1.6rem;
-line-height: 1.6;
-color: #6f6f6f;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
 }
 
 .plan-sign-up {
@@ -672,13 +672,13 @@ color: #6f6f6f;
 }
 
 .feature-icon {
-color: #e67e22;
-height: 3.2rem;
-width: 3.2rem;
-margin-bottom: 3.2rem;
-background-color: #fdf2e9;
-padding: 1.6rem;
-border-radius: 50%;
+  color: #e67e22;
+  height: 3.2rem;
+  width: 3.2rem;
+  margin-bottom: 3.2rem;
+  background-color: #fdf2e9;
+  padding: 1.6rem;
+  border-radius: 50%;
 }
 
 .feature-title {
@@ -686,19 +686,15 @@ border-radius: 50%;
   color: #333;
   font-weight: 700;
   margin-bottom: 1.6rem;
-
-
 }
 .feature-text {
-font-size: 1.8rem;
-line-height: 1.8rem;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
 }
-
 
 /************************************/
 /* TESTIMONIALS SECTION */
 /************************************/
-
 
 .section-cta {
   padding: 4.8rem rem 0 12.8rem;
@@ -710,13 +706,13 @@ line-height: 1.8rem;
   /* background-color: #e67e22; */
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 1.1rem;
-  background-image: linear-gradient(to right bottom, #eb984e,  #e67e22);
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
   overflow: hidden;
 }
 
 .cta-text-box {
-padding: 4.8rem 6.4rem 6.4rem 6.4rem;
-color: #45260a;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
 }
 
 .cta-text {
@@ -733,17 +729,20 @@ color: #45260a;
 .cts-img-box {
   background-size: cover;
   background-position: center;
-   background-image: linear-gradient(to right bottom,
-    rgba(235, 151, 78, 0.35),  
-    rgba(230, 125, 34, 0.35)),
-     url("../img/eating.jpg");
+  background-image:
+    linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url("../img/eating.jpg");
 }
 
 .cta-form {
   display: grid;
- grid-template-columns: 1fr 1fr;
- column-gap: 3.2rem;
- row-gap: 2.4rem;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
 }
 
 .cta-form label {
@@ -803,7 +802,6 @@ color: #45260a;
 .logo-col {
   display: flex;
   flex-direction: column;
-
 }
 
 .footer-logo {
@@ -845,12 +843,11 @@ color: #45260a;
   margin-bottom: 2.4rem;
 }
 
-.footer-nav{
+.footer-nav {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
-  
 }
 
 .footer-link:link,
@@ -863,8 +860,5 @@ color: #45260a;
 
 .footer-link:hover,
 .footer-link:active {
-  color: #555
+  color: #555;
 }
-
-
-
